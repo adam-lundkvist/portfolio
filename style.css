@@ -306,6 +306,10 @@ main {
         color: var(--text-color);
     } 
 
+    .nav-links:hover {
+        border-bottom: none;
+    }
+
     #cv-link {
         border: none;
     }
