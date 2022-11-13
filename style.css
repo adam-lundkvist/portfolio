@@ -312,7 +312,7 @@ main {
 
     #cv-link:hover {
         background: none;
-        color: #BF8B67;
+        color: var(--text-color);
     }
 
     .nav-links:hover {
