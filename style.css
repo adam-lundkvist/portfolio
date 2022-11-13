@@ -303,7 +303,7 @@ main {
         font-size: 1.5rem;
         margin: 10px 0 10px 0;
         min-width: auto;
-        color: #BF8B67;
+        color: var(--text-color);
     } 
 
     #cv-link {
