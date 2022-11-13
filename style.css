@@ -280,9 +280,10 @@ main {
         right: 0;
         background: var(--bg-color);
         min-width: 70%;
-        max-width: 100%;
+        max-width: 75%;
         margin: auto;
         overflow-y: scroll;
+        border-left: var(--text-color-light);
     }
 
     .nav-links {
