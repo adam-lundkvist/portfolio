@@ -31,7 +31,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: red;
+    background: var(--bg-color);
 }
 
 html {
@@ -92,7 +92,7 @@ header {
 }
 
 #greeting {
-    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
 nav {
@@ -106,6 +106,7 @@ nav {
 }
 
 #nav-div {
+    position: relative;
     align-items: center;
     justify-content: space-between;
     min-height: 60px;
@@ -163,6 +164,14 @@ nav {
 
 .primary-navigation {
     align-items: center;
+}
+
+.close-nav-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: var(--bg-color);
+    font-size: 2.5rem;
 }
 
 section {
@@ -269,6 +278,7 @@ main {
 
     .menu-bar {
         display: block !important;
+        font-size: 1.5rem;
     }
 
     #primary-navigation {
@@ -278,12 +288,11 @@ main {
         min-height: 100%;
         top: 0;
         right: 0;
-        background: var(--bg-color);
+        background: #632626;
         min-width: 70%;
-        max-width: 75%;
+        max-width: 100%;
         margin: auto;
         overflow-y: scroll;
-        border-left: var(--text-color-light);
     }
 
     .nav-links {
@@ -292,10 +301,20 @@ main {
         font-size: 1.5rem;
         margin: 10px 0 10px 0;
         min-width: auto;
+        color: #BF8B67;
     } 
 
+    #cv-link {
+        border: none;
+    }
+
+    #cv-link:hover {
+        background: none;
+        color: #BF8B67;
+    }
+
     .nav-links:hover {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
 
