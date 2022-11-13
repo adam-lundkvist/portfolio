@@ -12,6 +12,7 @@ openMenu.addEventListener("click", function() {
 
     closeNavBtn.addEventListener("click", function() {
         navMenu.style.display = "none";
+        document.getElementsByTagName("body")[0].style.overflowY = "scroll";
     });
 
     
