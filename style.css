@@ -178,10 +178,6 @@ main {
     margin: 0;
 }
 
-/* #about {
-    border
-} */
-
 #about .image {
     text-align: center;
 }
@@ -190,10 +186,6 @@ main {
     width: clamp(200px, 30vw, 250px);
     border-radius: 50%;
 }
-
-/* #about-info {
-    max-width: 50rem;
-} */
 
 .section-title {
     text-align: center;
@@ -279,7 +271,7 @@ main {
         min-height: 100%;
         top: 0;
         right: 0;
-        background: red;
+        background: var(--bg-color);
         min-width: 70%;
         max-width: 100%;
         margin: auto;
