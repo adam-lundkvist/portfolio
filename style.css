@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --bg-color: #BF8B67;
+    --bg-color: #FFFFF0;
     --text-color-light: #632626;
-    --text-color-middle: #000000;
+    --text-color: #000000;
     --text-color-dark: #395B64;
 
-    --text-color-normal: black;
-    --text-color-light: #632626;
-
-    --nav-bgcolor: white;
+    --nav-bgcolor: #FFFFF0;
     --nav-text-color: white;
-    --hover-color: black;
+    --hover-color: #000000;
 
 
-    --link-color: black;
+    --link-color: #000000;
 
     --border-color: #BF8B67;
     --bg-color-2: black;
@@ -27,7 +26,7 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    background: black;
+    background: var(--text-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -42,7 +41,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--bg-color);
-    color: var(--text-color-normal);
+    color: var(--text-color);
 }
 
 .container {
@@ -96,7 +95,7 @@ header {
 }
 
 nav {
-    border-bottom: 1px solid var(--text-color-light);
+    box-shadow: 0px 0px 10px 3px;
     position: fixed;
     max-width: 100%;
     height: auto;
@@ -114,16 +113,16 @@ nav {
 
 .links {
     text-decoration: none;
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 #cv-link {
-    border: 1px solid var(--text-color-normal);
+    border: 1px solid var(--text-color);
     border-radius: 5px;
 }
 
 #cv-link:hover {
-    background: var(--text-color-normal);
+    background: var(--text-color);
     color: var(--bg-color);
 }
 
@@ -136,7 +135,7 @@ nav {
 }
 
 .logo:hover {
-    color: var(--text-color-normal);
+    color: var(--text-color);
 }
 
 .menu-bar {
@@ -214,8 +213,8 @@ main {
 
 .skill-icon {
     margin-right: 10px;
-    font-size: 1.1rem;
-    color: black;
+    font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 #about-info p {
@@ -231,8 +230,10 @@ main {
     font-size: clamp(1rem, 4vw, 1.3rem);
     padding: 10px 20px;
     margin: 10px 0;
-    border: 2px solid var(--text-color-normal);
+    border: 1px solid var(--text-color);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
 }
 
 .project-img {
@@ -252,7 +253,7 @@ main {
 
 #shopping-cart-project {
     background: #E14D2A;
-    color: black;
+    color: var(--text-color);
 }
 
 #contact-info {
@@ -261,9 +262,9 @@ main {
 
 #contact-btn {
     padding: 10px 20px;
-    border: 2px solid var(--text-color-normal);
+    border: 2px solid var(--text-color);
     text-align: center;
-    color: var(--text-color-normal);
+    color: var(--text-color);
     border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
@@ -271,7 +272,7 @@ main {
 
 #footer-div {
     text-align: center;
-    min-height: 10rem;
+    min-height: 5rem;
 }
 
 @media (max-width: 800px) {
@@ -284,11 +285,12 @@ main {
     #primary-navigation {
         position: fixed;
         display: none;
+        background: var(--bg-color);
         z-index: 1000;
         min-height: 100%;
         top: 0;
         right: 0;
-        background: #632626;
+        box-shadow: 0px 0px 10px 3px;
         min-width: 70%;
         max-width: 100%;
         margin: auto;
