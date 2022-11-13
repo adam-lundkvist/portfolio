@@ -94,7 +94,7 @@ header {
 }
 
 #greeting {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 nav {
@@ -268,10 +268,6 @@ main {
 
 @media (max-width: 800px) {
 
-    section {
-        min-height: 30vh;
-    }
-
     .menu-bar {
         display: block !important;
     }
@@ -305,9 +301,9 @@ main {
 
 
 @media (max-width: 1000px) {
-    #projects {
-        display: inline-block;
-        text-align: center;
+
+    .grid-auto {
+        display: block;
     }
 
     .project-img {
