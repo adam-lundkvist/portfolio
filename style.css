@@ -1,21 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
     --bg-color: #FFFFF0;
     --text-color-light: #632626;
     --text-color: #000000;
     --text-color-dark: #395B64;
-
     --nav-bgcolor: #FFFFF0;
     --nav-text-color: white;
     --hover-color: #000000;
-
-
     --link-color: #000000;
-
-    --border-color: #BF8B67;
-    --bg-color-2: black;
-
 }
 
 * {
@@ -94,6 +85,23 @@ header {
     font-size: clamp(1.3rem, 5vw, 2rem);
 }
 
+#jump-to-section {
+    padding: 10px 20px 10px 20px;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    position: relative;
+    animation: btn-jump 1.8s;
+    animation-delay: 4s;
+}
+
+@keyframes btn-jump {
+    0% {top: 0;}
+    25% {top: 20px;}
+    50% {top: 0;}
+    75% {top: 20px;}
+    100% {top: 0;}
+}
+
 nav {
     box-shadow: 0px 0px 10px 3px;
     position: fixed;
@@ -102,6 +110,7 @@ nav {
     top: 0;
     width: 100%;
     background: var(--bg-color);
+    z-index: 999;
 }
 
 #nav-div {
