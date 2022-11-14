@@ -91,7 +91,7 @@ header {
     border: 1px solid var(--text-color);
     position: relative;
     animation: btn-jump 1.8s;
-    animation-delay: 4s;
+    animation-delay: 3s;
 }
 
 @keyframes btn-jump {
