@@ -273,7 +273,7 @@ main {
 
 #contact-btn {
     padding: 10px 20px;
-    border: 2px solid var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: center;
     color: var(--text-color);
     border-radius: 5px;
