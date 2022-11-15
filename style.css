@@ -91,7 +91,7 @@ header {
     border: 1px solid var(--text-color);
     position: relative;
     animation: btn-jump 1.8s;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 @keyframes btn-jump {
@@ -248,6 +248,7 @@ main {
 
 .project-img {
     width: clamp(300px, 50vw, 550px);
+    border-radius: 5px;
 }
 
 .project-container {
