@@ -247,7 +247,7 @@ main {
 }
 
 .project-img {
-    width: clamp(300px, 50vw, 550px);
+    width: clamp(350px, 60vw, 550px);
     border-radius: 5px;
 }
 
@@ -276,7 +276,6 @@ main {
     border: 1px solid var(--text-color);
     text-align: center;
     color: var(--text-color);
-    border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
 }
