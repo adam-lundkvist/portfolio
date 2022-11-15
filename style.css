@@ -82,7 +82,7 @@ header {
 }
 
 #greeting {
-    font-size: clamp(1rem, 5vw, 2rem);
+    font-size: clamp(1rem, 5vw, 2.9rem);
 }
 
 #jump-to-section {
@@ -212,13 +212,14 @@ main {
     max-width: 50rem;
 } */
 
-.section-title {
-    text-align: center;
-}
+/* .section-title {
+
+} */
 
 #skills {
-    padding: 0;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .skill-icon {
@@ -236,10 +237,9 @@ main {
     padding: 0;
 }
 
-.skill-list {
-    font-size: clamp(1rem, 4vw, 1.3rem);
+.skill {
+    font-size: clamp(0.8rem, 4vw, 1rem);
     padding: 10px 20px;
-    margin: 10px 0;
     border: 1px solid var(--text-color);
     border-radius: 4px;
     display: flex;
@@ -255,6 +255,11 @@ main {
     text-align: center;
     max-width: 900px;
     align-items: center;
+    margin-top: 3rem;
+}
+
+.project-title {
+text-decoration: underline;
 }
 
 .project-info {
