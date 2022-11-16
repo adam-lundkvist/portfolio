@@ -5,7 +5,7 @@
     --text-color-dark: #395B64;
     --nav-bgcolor: #FFFFF0;
     --nav-text-color: white;
-    --hover-color: #000000;
+    --hover-color: #E14D2A;
     --link-color: #000000;
 }
 
@@ -168,10 +168,27 @@ nav {
     padding: 5px;
     color: var(--text-color-normal);
     font-weight: 600;
+    position: relative;
+    transition: all ease-in-out 250ms;
+}
+
+.nav-links::after {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 3px;
+    width: 0%;
+    background: var(--hover-color);
+    bottom: -5px;
+    transition: all ease-in-out 250ms;
+}
+
+.nav-links:hover::after {
+    width: 100%;
 }
 
 .nav-links:hover {
-    border-bottom: 2px solid var(--text-color-light);
+    color: var(--hover-color);
 }
 
 .primary-navigation {
