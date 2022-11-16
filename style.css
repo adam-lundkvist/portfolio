@@ -148,7 +148,7 @@ nav {
 }
 
 .logo:hover {
-    color: var(--text-color);
+    color: var(--hover-color);
 }
 
 .menu-bar {
