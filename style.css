@@ -54,7 +54,12 @@ body {
 .grid-auto {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 5rem;
+    gap: 1rem;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section-div {
@@ -148,7 +153,7 @@ nav {
 }
 
 .logo:hover {
-    color: var(--hover-color);
+    color: var(--text-color);
 }
 
 .menu-bar {
@@ -201,7 +206,6 @@ nav {
     right: 15px;
     color: var(--text-color);
     font-size: 2rem;
-    border-radius: 0px;
 }
 
 section {
@@ -238,8 +242,6 @@ main {
 } */
 
 #skills {
-    display: flex;
-    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
@@ -259,13 +261,15 @@ main {
 }
 
 .skill {
-    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-size: 0.8rem;
     padding: 10px 20px;
     border: 1px solid var(--text-color);
     border-radius: 4px;
     display: flex;
     align-items: center;
 }
+
+
 
 .project-img {
     width: clamp(350px, 60vw, 550px);
@@ -303,6 +307,16 @@ main {
 
 #contact-info {
     text-align: center;
+}
+
+#tools {
+    gap: 0.5rem;
+}
+
+.tool {
+    border: 1px solid var(--text-color);
+    padding: 10px 20px;
+    border-radius: 4px;
 }
 
 #contact-btn {
@@ -369,7 +383,7 @@ main {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 950px) {
 
     .grid-auto {
         display: block;
@@ -377,5 +391,9 @@ main {
 
     .project-img {
         text-align: center;
+    }
+
+    #tools-div {
+        margin-top: 2rem;
     }
 } 
