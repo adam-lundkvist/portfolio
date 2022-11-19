@@ -155,6 +155,7 @@ nav {
     width: 100%;
     background: var(--bg-color);
     z-index: 999;
+    padding: 10px 0;
 }
 
 #nav-div {
@@ -180,15 +181,18 @@ nav {
 }
 
 .logo {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    margin-left: 1.2rem;
     font-weight: 700;
-    color: var(--text-color-light);
-    padding: 5px;
+    color: var(--text-color);
     text-transform: uppercase;
+    /* position: relative; */
+    transition: all ease-in-out 250ms;
 }
 
+
 .logo:hover {
-    color: var(--text-color);
+    color: var(--hover-color);
 }
 
 .menu-bar {
@@ -202,11 +206,13 @@ nav {
 
 #primary-navigation {
     list-style: none;
+    padding: 10px;
 }
 
 .nav-links {
-    padding: 5px;
+    padding: 10px;
     color: var(--text-color-normal);
+    font-size: 1.1rem;
     font-weight: 600;
     position: relative;
     transition: all ease-in-out 250ms;
@@ -219,7 +225,7 @@ nav {
     height: 3px;
     width: 0%;
     background: var(--hover-color);
-    bottom: -5px;
+    bottom: 0px;
     transition: all ease-in-out 250ms;
 }
 
@@ -260,10 +266,8 @@ main {
 }
 
 #my-image {
-    max-width: 70px;
-    padding: 5px;
+    max-width: 60px;
     border-radius: 50%;
-    margin-right: 10px;
 }
 
 /* #about-info {
@@ -399,9 +403,6 @@ footer {
 
 @media (max-width: 800px) {
 
-    .logo {
-        font-size: 1rem;
-    }
 
     #menu-bar {
         display: block !important;
@@ -420,7 +421,6 @@ footer {
         min-width: 70%;
         max-width: 100%;
         margin: auto;
-        overflow-y: scroll;
     }
 
     .nav-links {
@@ -428,12 +428,11 @@ footer {
         padding: 10px;
         font-size: 1.5rem;
         margin: 10px 0 10px 0;
-        min-width: auto;
         color: var(--text-color);
     } 
 
-    .nav-links:hover {
-        border-bottom: none;
+    .nav-links:hover::after {
+        width: 60%;
     }
 
     #cv-link {
@@ -452,7 +451,6 @@ footer {
 
 
 @media (max-width: 950px) {
-
     .grid-auto {
         display: block;
     }
