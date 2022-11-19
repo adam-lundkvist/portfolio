@@ -399,6 +399,7 @@ footer {
 
 .social-icon {
     font-size: 2rem;
+    color: wheat;
 }
 
 @media (max-width: 800px) {
