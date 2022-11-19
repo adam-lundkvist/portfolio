@@ -49,7 +49,7 @@ body {
 }
 
 section {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 90px;
 }
 
 .section-heading {
@@ -121,13 +121,13 @@ header {
 }
 
 #greeting {
+    display: block;
     font-size: clamp(1rem, 5vw, 2.9rem);
+    margin-bottom: 1rem;
 }
 
 #jump-to-section {
     padding: 10px 20px 10px 20px;
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
     border-radius: 7px;
     position: relative;
     animation: btn-jump 1.8s;
@@ -342,6 +342,19 @@ main {
     color: var(--bg-color);
 }
 
+.general-btns {
+    transition: 0.4s;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    display: inline-block;
+}
+
+.general-btns:hover {
+    background: var(--hover-color);
+    color: var(--bg-color);
+    border: 1px solid var(--hover-color);
+}
+
 #contact-info {
     text-align: center;
 }
@@ -358,10 +371,7 @@ main {
 
 #contact-btn {
     padding: 10px 20px;
-    border: 1px solid var(--text-color);
     text-align: center;
-    color: var(--text-color);
-    display: inline-block;
     margin-top: 10px;
     border-radius: 7px;
 }
