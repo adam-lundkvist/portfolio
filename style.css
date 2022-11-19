@@ -6,6 +6,9 @@
     --nav-bgcolor: #FFFFF0;
     --nav-text-color: white;
     --hover-color: #E14D2A;
+    --footer-bg-color: black;
+    --footer-color: white;
+    --heading-line-color: #BF8B67;
     --link-color: #000000;
 }
 
@@ -45,6 +48,33 @@ body {
     gap: 1rem;
 }
 
+section {
+    scroll-margin-top: 90px;
+}
+
+.section-heading {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+hr {
+    max-width: 400px;
+    background: var(--heading-line-color);
+    height: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.section-description {
+    text-align: center;
+}
+
+.align-center {
+    text-align: center;
+}
+
 .flex-center-align-x-y {
     display: flex;
     align-items: center;
@@ -54,7 +84,7 @@ body {
 .grid-auto {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .wrap {
@@ -63,7 +93,7 @@ body {
 }
 
 .section-div {
-    margin-bottom: 4rem;
+    margin-top: 5rem;
 }
 
 header {
@@ -73,8 +103,8 @@ header {
 }
 
 #intro {
-    background: var(--bg-color);
     color: var(--text-color-light);
+    gap: 2rem;
 }
 
 #intro div {
@@ -98,9 +128,14 @@ header {
     padding: 10px 20px 10px 20px;
     color: var(--text-color);
     border: 1px solid var(--text-color);
+    border-radius: 7px;
     position: relative;
     animation: btn-jump 1.8s;
     animation-delay: 4s;
+}
+
+#down-icon {
+    margin: 0 0 0 10px;
 }
 
 @keyframes btn-jump {
@@ -145,8 +180,8 @@ nav {
 }
 
 .logo {
-    font-size: 1.3rem;
-    font-weight: 800;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--text-color-light);
     padding: 5px;
     text-transform: uppercase;
@@ -220,17 +255,15 @@ main {
     margin: 0;
 }
 
-/* #about {
-    border
-} */
-
-#about .image {
+.image {
     text-align: center;
 }
 
 #my-image {
-    width: clamp(200px, 30vw, 250px);
+    max-width: 70px;
+    padding: 5px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* #about-info {
@@ -238,17 +271,15 @@ main {
 } */
 
 /* .section-title {
-
 } */
+
+
+.sub-section-title {
+    margin: 4rem 0 2rem 0;
+}
 
 #skills {
     gap: 0.5rem;
-}
-
-.skill-icon {
-    margin-right: 10px;
-    font-size: 1.6rem;
-    color: var(--text-color);
 }
 
 #about-info p {
@@ -261,47 +292,53 @@ main {
 }
 
 .skill {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 10px 20px;
     border: 1px solid var(--text-color);
-    border-radius: 4px;
+    border-radius: 7px;
     display: flex;
     align-items: center;
 }
 
-
+.project-img-div {
+    width: 100%;
+}
 
 .project-img {
-    width: clamp(350px, 60vw, 550px);
-    border-radius: 5px;
+    border-radius: 10px;
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%;
 }
 
 .project-container {
-    text-align: center;
-    max-width: 900px;
     align-items: center;
     margin-top: 3rem;
 }
 
-/* .project-title {
-} */
-
 .project-info {
-    border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
+}
+
+.btns {
+    margin-top: 2rem;
 }
 
 .project-btn {
-    border: 1px solid var(--bg-color);
-    color: var(--bg-color);
+    max-width: 120px;
+    text-align: center;
     padding: 10px 20px;
     display: inline-block;
+    background: var(--bg-color);
+    color: var(--text-color);
     border-radius: 5px;
-    font-weight: 700;
+    font-weight: 600;
+    box-shadow: 0px 0px 1px 1px;
+    transition: 0.3s;
 }
 
-#shopping-cart-project {
-    background: #E14D2A;
+.project-btn:hover {
+    background: var(--hover-color);
     color: var(--bg-color);
 }
 
@@ -316,7 +353,7 @@ main {
 .tool {
     border: 1px solid var(--text-color);
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 7px;
 }
 
 #contact-btn {
@@ -326,6 +363,12 @@ main {
     color: var(--text-color);
     display: inline-block;
     margin-top: 10px;
+    border-radius: 7px;
+}
+
+footer {
+    background: var(--footer-bg-color);
+    color: var(--footer-color);
 }
 
 #footer-div {
@@ -333,7 +376,22 @@ main {
     min-height: 5rem;
 }
 
+#social-box {
+    margin: 10px 0 10px 0;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 2rem;
+}
+
 @media (max-width: 800px) {
+
+    .logo {
+        font-size: 1rem;
+    }
 
     #menu-bar {
         display: block !important;
