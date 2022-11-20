@@ -171,7 +171,7 @@ nav {
 }
 
 .logo {
-    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-size: clamp(0.7rem, 3vw, 1.3rem);
     margin-left: 1.2rem;
     font-weight: 700;
     color: var(--text-color);
@@ -372,8 +372,16 @@ footer {
 }
 
 #footer-div {
-    text-align: center;
-    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 20px 0;
+}
+
+@media (max-width: 500px) {
+    #footer-div {
+        display: block;
+    }
 }
 
 #social-box {
@@ -385,7 +393,7 @@ footer {
 
 .social-icon {
     font-size: 2rem;
-    color: wheat;
+    color: white;
 }
 
 @media (max-width: 800px) {
