@@ -300,7 +300,7 @@ main {
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
-    box-shadow: 0px 0px 2px 1px;
+    box-shadow: 0px 0px 5px 1px;
 }
 
 .project-container {
