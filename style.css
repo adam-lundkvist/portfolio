@@ -223,7 +223,7 @@ nav {
     position: relative;
     animation: btn-jump 1.8s;
     animation-delay: 4s;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 #down-icon {
@@ -262,10 +262,6 @@ main {
     width: clamp(200px, 40vw, 300px);
     border-radius: 50%;
 }
-
-/* .section-title {
-} */
-
 
 .sub-section-title {
     margin: 4rem 0 2rem 0;
@@ -326,6 +322,7 @@ main {
     font-weight: 600;
     box-shadow: 0px 0px 1px 1px;
     transition: 0.3s;
+    border-radius: 3px;
 }
 
 .project-btn:hover {
@@ -365,6 +362,7 @@ main {
     padding: 10px 20px;
     text-align: center;
     margin-top: 10px;
+    border-radius: 3px;
 }
 
 footer {
