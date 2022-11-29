@@ -220,7 +220,6 @@ nav {
 
 #jump-to-section {
     padding: 10px 20px 10px 20px;
-    border-radius: 7px;
     position: relative;
     animation: btn-jump 1.8s;
     animation-delay: 4s;
@@ -323,7 +322,6 @@ main {
     display: inline-block;
     background: var(--bg-color);
     color: var(--text-color);
-    border-radius: 5px;
     font-weight: 600;
     box-shadow: 0px 0px 1px 1px;
     transition: 0.3s;
@@ -366,7 +364,6 @@ main {
     padding: 10px 20px;
     text-align: center;
     margin-top: 10px;
-    border-radius: 7px;
 }
 
 footer {
