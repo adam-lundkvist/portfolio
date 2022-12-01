@@ -288,10 +288,6 @@ main {
     border-radius: 7px;
 }
 
-.project-img-figure {
-    /* max-width: 100%; */
-}
-
 .project-img {
     border-radius: 10px;
     object-fit: cover;
