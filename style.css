@@ -48,10 +48,6 @@ body {
     gap: 1rem;
 }
 
-section {
-    scroll-margin-top: 130px;
-}
-
 .section-heading {
     margin-top: 3rem;
     margin-bottom: 2rem;
@@ -242,6 +238,7 @@ nav {
     min-height: 100vh;
     padding: 0;
     margin: 0;
+    scroll-margin-top: 130px;
 }
 
 main {
