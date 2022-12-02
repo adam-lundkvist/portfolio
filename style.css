@@ -293,12 +293,7 @@ main {
 }
 
 .project-container {
-    align-items: center;
     margin-top: 3rem;
-}
-
-.project-info {
-    padding: 30px;
 }
 
 .btns {
@@ -389,6 +384,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+    #intro {
+        text-align: center;
+    }
 
     #hamburger-menu {
         display: block !important;
