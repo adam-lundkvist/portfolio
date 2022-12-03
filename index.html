@@ -1,113 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Adam Lundkvist</title>
-    <link rel="icon" href="favicon.png">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/9cd636eced.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <title>Adam Lundkvist</title>
+  <link rel="icon" href="favicon.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9cd636eced.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
 <header>
-    <nav class="container">
-        <a href="#intro" class="logo links">Adam Lundkvist</a>
-        <ul id="primary-navigation" class="primary-navigation flex">
-            <li><a href="#intro" class="nav-links links">Home</a></li>
-            <li><a href="#about" class="nav-links links">About</a></li>
-            <li><a href="#projects" class="nav-links links">Projects</a></li>
-            <li><a href="#contact" class="nav-links links">Contact</a></li>       
-        </ul>
-        <div id="hamburger-menu">
-            <i class="fa-solid fa-bars hamburger-icons" id="hamburger-open"></i>
-            <i class="fa-solid fa-xmark hamburger-icons" id="hamburger-close"></i>
-        </div>
-    </nav>
+  <nav class="container">
+  <a href="#intro" class="logo links">Adam Lundkvist</a>
+    <ul id="primary-navigation" class="primary-navigation flex">
+      <li><a href="#intro" class="nav-links links">Home</a></li>
+      <li><a href="#about" class="nav-links links">About</a></li>
+      <li><a href="#projects" class="nav-links links">Projects</a></li>
+      <li><a href="#contact" class="nav-links links">Contact</a></li>       
+    </ul>
+    <div id="hamburger-menu">
+      <i class="fa-solid fa-bars hamburger-icons" id="hamburger-open"></i>
+      <i class="fa-solid fa-xmark hamburger-icons" id="hamburger-close"></i>
+    </div>
+  </nav>
 </header>
-
 <main class="container">
-    <div id="intro" class="flex-center-align-x-y main-section">
-        <article>
-            <h2 id="greeting">Hello There!<br>My Name is Adam Lundkvist.<br>I Focus on the Front-End of Websites.</h2>
-            <a id="jump-to-section" class="general-btns" href="#about">About Me<i id="down-icon" class="fa-solid fa-chevron-down"></i></a> 
-        </article>
+  <div id="intro" class="flex-center-align-x-y main-section">
+    <article class="intro-article">
+      <h2 id="greeting">Hello There!<br>My Name is Adam Lundkvist.<br>I Focus on the Front-End of Websites.</h2>
+      <a id="jump-to-section" class="general-btns" href="#about">About Me<i id="down-icon" class="fa-solid fa-chevron-down"></i></a> 
+    </article>
+  </div>
+  <div id="about" class="main-section">
+    <section class="section-heading">
+      <h2>About Me</h2>
+      <hr class="section-line">
+    </section>
+    <div class="grid-auto section-div">
+      <article id="about-info"> 
+        <h3 class="sub-section-title">My Info</h3>
+        <p>With an interest in front-end development, building everything that's visible on a web page is something I enjoy doing. In my websites I always strive for a clean and sharp look as well as user-centered design.</p>
+      </article>
+      <section id="skills-info" class="section-div">                
+        <h3 class="sub-section-title">Skills</h3>
+        <ul id="skills" class="wrap">
+          <li class="skill">HTML</li>
+          <li class="skill">CSS</li>
+          <li class="skill">JavaScript</li>
+          <li class="skill">Bootstrap</li>
+          <li class="skill">Information Architecture</li>
+          <li class="skill">WordPress</li>
+          <li class="skill">Figma</li>
+        </ul>
+      </section>
     </div>
-
-    <div id="about" class="main-section">
-        <section class="section-heading">
-            <h2>About Me</h2>
-            <hr class="section-line">
-        </section>
-        <div class="grid-auto section-div">
-            <article id="about-info"> 
-                <h3 class="sub-section-title">My Info</h3>
-                <p>With an interest in front-end development, building everything that's visible on a web page is something I enjoy doing. In my websites I always strive for a clean and sharp look as well as user-centered design.</p>
-            </article>
-            <section id="skills-info" class="section-div">                
-                <h3 class="sub-section-title">Skills</h3>
-                <ul id="skills" class="wrap">
-                    <li class="skill">HTML</li>
-                    <li class="skill">CSS</li>
-                    <li class="skill">JavaScript</li>
-                    <li class="skill">Bootstrap</li>
-                    <li class="skill">Information Architecture</li>
-                    <li class="skill">WordPress</li>
-                    <li class="skill">Figma</li>
-                </ul>
-            </section>
-        </div>
+  </div>
+  <div id="projects" class="main-section">
+    <section class="section-heading">
+      <h2>Projects</h2>
+      <hr class="section-line">
+    </section>
+    <article class="project-container grid-auto">
+      <figure class="project-img-figure">
+        <img class="project-img" alt="Skoknuten" src="project.PNG">
+      </figure>
+    <div class="project-info">
+      <h3 class="project-title">Skoknuten</h3>
+      <p>In this project I built the front-end of a website with a functional shopping cart. The main focus of the project is the functionality of the shopping cart, where functions such as adding products and incrementing or decrementing quantities have been implemented.</p>
+      <div class="btns">
+        <a class="project-btn links" href="https://skoknuten.netlify.app" target="_blank">View Project</a>
+      </div>
+      <div id="tools-div" class="sub-section">
+        <h4 class="sub-section-title">Tools Used</h4>
+        <ul id="tools" class="wrap">
+          <li class="tool">HTML</li>
+          <li class="tool">CSS</li>
+          <li class="tool">JavaScript</li>
+          <li class="tool">Github</li>
+          <li class="tool">Netlify</li>
+        </ul>    
+      </div>
     </div>
-
-    <div id="projects" class="main-section">
-        <section class="section-heading">
-            <h2>Projects</h2>
-            <hr class="section-line">
-        </section>
-            <article class="project-container grid-auto">
-                <figure class="project-img-figure">
-                    <img class="project-img" alt="Skoknuten" src="project.PNG">
-                </figure>
-                <div class="project-info">
-                    <h3 class="project-title">Skoknuten</h3>
-                    <p>In this project I built the front-end of a website with a functional shopping cart. The main focus of the project is the functionality of the shopping cart, where functions such as adding products and incrementing or decrementing quantities have been implemented.</p>
-                    <div class="btns">
-                        <a class="project-btn links" href="https://skoknuten.netlify.app" target="_blank">View Project</a>
-                    </div>
-                    <div id="tools-div" class="sub-section">
-                        <h4 class="sub-section-title">Tools Used</h4>
-                        <ul id="tools" class="wrap">
-                            <li class="tool">HTML</li>
-                            <li class="tool">CSS</li>
-                            <li class="tool">JavaScript</li>
-                            <li class="tool">Netlify</li>
-                        </ul>    
-                    </div>
-                </div>
-        </article>
+    </article>
+  </div>
+  <div id="contact" class="main-section">
+    <section class="section-heading">
+      <h2>Contact Me</h2>
+      <hr class="section-line">
+    </section>
+    <div id="contact-info" class="section-div">
+      <a id="contact-btn" class="general-btns" href="mailto:adamlundkvist00@gmail.com">Email</a>
     </div>
-    
-    <div id="contact" class="main-section">
-        <section class="section-heading">
-            <h2>Contact Me</h2>
-            <hr class="section-line">
-        </section>
-        <div id="contact-info" class="section-div">
-            <a id="contact-btn" class="general-btns" href="mailto:adamlundkvist00@gmail.com">Email</a>
-        </div>
-    </div>
+  </div>
 </main>
 <footer>
-    <div id="footer-section" class="container">
-        <p>Designed & Built by Adam Lundkvist</p>
-        <div id="social-box" class="flex">
-            <a href="https://www.linkedin.com/in/adam-lundkvist-b4b699199/" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
-        </div>
+  <div id="footer-section" class="container">
+    <p>Designed & Built by Adam Lundkvist</p>
+    <div id="social-box" class="flex">
+      <a href="https://www.linkedin.com/in/adam-lundkvist-b4b699199/" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
     </div>
+  </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html> 
