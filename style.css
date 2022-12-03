@@ -5,11 +5,13 @@
     --text-color-dark: #395B64;
     --nav-bgcolor: #FFFFF0;
     --nav-text-color: white;
-    --hover-color: #E14D2A;
+    --hover-color: #FF7000;
     --footer-bg-color: black;
     --footer-color: white;
-    --heading-line-color: #BF8B67;
+    --heading-line-color: #FF7000;
     --link-color: #000000;
+    --box-shadow: 0px 0px 15px 0px;
+
 }
 
 * {
@@ -95,7 +97,7 @@ body {
 header {
     padding: 0;
     margin: 0;
-    box-shadow: 0px 0px 10px 3px;
+    box-shadow: var(--box-shadow);
     position: fixed;
     height: auto;
     top: 0;
@@ -196,6 +198,9 @@ nav {
 
 #intro {
     color: var(--text-color-light);
+}
+
+.intro-article {
     animation: content-move-in 1s;
 }
 
@@ -220,6 +225,7 @@ nav {
     animation: btn-jump 1.8s;
     animation-delay: 4s;
     border-radius: 3px;
+    transition: 0.5s;
 }
 
 #down-icon {
@@ -285,11 +291,20 @@ main {
     border-radius: 7px;
 }
 
+.project-img-figure {
+    padding: 0;
+    margin: 0;
+}
+
 .project-img {
     border-radius: 10px;
     object-fit: cover;
     width: 100%;
-    box-shadow: 0px 0px 5px 1px;
+    box-shadow: var(--box-shadow);
+}
+
+.project-info {
+    margin-left: 30px;
 }
 
 .project-container {
@@ -306,16 +321,17 @@ main {
     padding: 10px 20px;
     display: inline-block;
     background: var(--bg-color);
-    color: var(--text-color);
+    border: 1px solid var(--text-color);
     font-weight: 600;
-    box-shadow: 0px 0px 1px 1px;
-    transition: 0.3s;
+    transition: 0.5s;
     border-radius: 3px;
 }
 
 .project-btn:hover {
     background: var(--hover-color);
     color: var(--bg-color);
+    margin-left: 5px;
+    border: 1px solid var(--hover-color);
 }
 
 .general-btns {
@@ -342,8 +358,9 @@ main {
 
 .tool {
     border: 1px solid var(--text-color);
-    padding: 10px 20px;
-    border-radius: 7px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 #contact-btn {
@@ -384,6 +401,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+    .project-info {
+        margin-top: 40px 0 0 0;
+    }
 
     #intro {
         text-align: center;
