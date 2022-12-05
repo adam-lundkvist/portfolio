@@ -285,10 +285,6 @@ main {
     box-shadow: var(--box-shadow);
 }
 
-.project-info {
-    margin-left: 30px;
-}
-
 .project-container {
     margin-top: 3rem;
 }
