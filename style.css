@@ -188,16 +188,8 @@ nav {
     align-items: center;
 }
 
-.close-nav-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    color: var(--text-color);
-    font-size: 2rem;
-}
-
 #intro {
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 
 .intro-article {
@@ -215,7 +207,7 @@ nav {
 
 #greeting {
     display: block;
-    font-size: clamp(1rem, 5vw, 2.9rem);
+    font-size: clamp(1rem, 5vw, 2.6rem);
     margin-bottom: 1rem;
 }
 
@@ -256,16 +248,6 @@ main {
     text-align: center;
 }
 
-#my-image {
-    max-width: 60px;
-    border-radius: 50%;
-}
-
-#my-image-main {
-    width: clamp(200px, 40vw, 300px);
-    border-radius: 50%;
-}
-
 .sub-section-title {
     margin: 4rem 0 1rem 0;
 }
@@ -301,6 +283,10 @@ main {
     object-fit: cover;
     width: 100%;
     box-shadow: var(--box-shadow);
+}
+
+.project-info {
+    margin-left: 30px;
 }
 
 .project-container {
@@ -422,6 +408,16 @@ footer {
         min-width: 70%;
         max-width: 100%;
         margin: auto;
+        animation: nav-animation 0.5s;
+    }
+    
+    @keyframes nav-animation {
+        from {
+            transform: translateX(100vw);
+        }
+        to {
+            transform: translateX(0);
+        }
     }
 
     .nav-links {
