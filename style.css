@@ -285,6 +285,10 @@ main {
     box-shadow: var(--box-shadow);
 }
 
+.project-info {
+    margin-left: 30px;
+}
+
 .project-container {
     margin-top: 3rem;
 }
@@ -400,20 +404,10 @@ footer {
         min-height: 100%;
         top: 0;
         right: 0;
-        box-shadow: var(--box-shadow);
+        box-shadow: 0px 0px 10px 3px;
         min-width: 70%;
         max-width: 100%;
         margin: auto;
-        animation: nav-animation 0.5s;
-    }
-    
-    @keyframes nav-animation {
-        from {
-            transform: translateX(100vw);
-        }
-        to {
-            transform: translateX(0);
-        }
     }
 
     .nav-links {
