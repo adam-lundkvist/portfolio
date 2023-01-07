@@ -383,6 +383,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+    
+    .project-info {
+    margin-left: 0px;
+    }
 
     .project-info {
         margin-top: 40px 0 0 0;
