@@ -224,6 +224,10 @@ nav {
     margin: 0 0 0 10px;
 }
 
+#jump-to-section:hover {
+    margin-top: 5px;
+}
+
 @keyframes btn-jump {
     0% {top: 0;}
     25% {top: 20px;}
