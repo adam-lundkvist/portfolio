@@ -214,7 +214,6 @@ nav {
 #jump-to-section {
     padding: 10px 20px;
     position: relative;
-    animation-delay: 4s;
     border-radius: 3px;
     transition: 0.5s;
 }
@@ -222,6 +221,7 @@ nav {
 #down-icon {
     margin: 0 0 0 10px;
 }
+
 .main-section {
     min-height: 100vh;
     padding: 0;
