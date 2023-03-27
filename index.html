@@ -14,23 +14,22 @@
 <body>
 <header>
   <nav class="container">
-  <a href="#intro" class="logo links">Adam Lundkvist</a>
-    <ul id="primary-navigation" class="primary-navigation flex">
-      <li><a href="#intro" class="nav-links links">Home</a></li>
-      <li><a href="#about" class="nav-links links">About</a></li>
-      <li><a href="#projects" class="nav-links links">Projects</a></li>
-      <li><a href="#contact" class="nav-links links">Contact</a></li>       
-    </ul>
+    <a href="#intro" class="logo links">Adam Lundkvist</a>
+      <ul id="primary-navigation" class="primary-navigation flex">
+        <li><a href="#about" class="nav-links links">About</a></li>
+        <li><a href="#projects" class="nav-links links">Projects</a></li>
+        <li><a href="#contact" class="nav-links links">Contact</a></li>       
+      </ul>
     <div id="hamburger-menu">
-      <i class="fa-solid fa-bars hamburger-icons" id="hamburger-open"></i>
-      <i class="fa-solid fa-xmark hamburger-icons" id="hamburger-close"></i>
+      <i onclick="openNav()" class="fa-solid fa-bars hamburger-icons" id="hamburger-open"></i>
+      <i onclick="closeNav()" class="fa-solid fa-xmark hamburger-icons" id="hamburger-close"></i>
     </div>
   </nav>
 </header>
 <main class="container">
   <div id="intro" class="flex-center-align-x-y main-section">
     <article class="intro-article">
-      <h2 id="greeting">Hello There!<br>My Name is Adam Lundkvist.<br>I Specialize in Front-End Web Development.</h2>
+      <h2 id="greeting">Hello There!<br>My Name is Adam Lundkvist.<br>I Specialize in Front-End Web Development</h2>
       <a id="jump-to-section" class="general-btns" href="#about">About Me<i id="down-icon" class="fa-solid fa-chevron-down"></i></a> 
     </article>
   </div>
@@ -41,18 +40,18 @@
     </section>
     <div class="grid-auto section-div">
       <article id="about-info"> 
-        <h3 class="sub-section-title">My Info</h3>
-        <p>With an interest in front-end development, building everything that's visible on a web page is something I enjoy doing. In my websites I always strive for a clean and sharp look as well as user-centered design.</p>
+        <h3 class="sub-section-title">Introduction</h3>
+        <p>With a love for front-end development, building everything that's visible on a web page is something I enjoy doing. I always strive for a clean and sharp UI as well as user-centered design that will lead to sucess.</p>
       </article>
       <section id="skills-info" class="section-div">                
         <h3 class="sub-section-title">Skills</h3>
         <ul id="skills" class="wrap">
           <li class="skill">JavaScript</li>
           <li class="skill">React.js</li>
-          <li class="skill">Bootstrap</li>
+          <li class="skill">UX Design</li>
           <li class="skill">HTML</li>
           <li class="skill">CSS</li>
-          <li class="skill">Information Architecture</li>
+          <li class="skill">Bootstrap</li>
           <li class="skill">WordPress</li>
           <li class="skill">Figma</li>
         </ul>
@@ -67,7 +66,7 @@
     <article class="project-container grid-auto">
       <figure class="project-img-figure">
         <a href="https://skoknuten.netlify.app" target="_blank">
-          <img class="project-img" alt="Skoknuten" src="project.PNG">
+        <img class="project-img" alt="Skoknuten" src="project.PNG">
         </a>
       </figure>
     <div class="project-info">
@@ -76,8 +75,7 @@
       <div class="btns">
         <a class="project-btn links" href="https://skoknuten.netlify.app" target="_blank">View Project</a>
       </div>
-      <div id="tools-div" class="sub-section">
-        <h4 class="sub-section-title">Tools Used</h4>
+      <div class="tools-div sub-section">
         <ul id="tools" class="wrap">
           <li class="tool">HTML</li>
           <li class="tool">CSS</li>
@@ -104,7 +102,6 @@
     <p>Designed & Built by Adam Lundkvist</p>
     <div id="social-box" class="flex">
       <a href="https://www.linkedin.com/in/adam-lundkvist-b4b699199/" target="_blank"><i class="fa-brands fa-linkedin social-icon"></i></a>
-      <a href="https://github.com/adam-lundkvist" target="_blank"><i class="fa-brands fa-square-github social-icon"></i></a>
     </div>
   </div>
 </footer>
