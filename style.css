@@ -206,7 +206,7 @@ nav {
 
 #greeting {
     display: block;
-    font-size: clamp(1rem, 5vw, 2.3rem);
+    font-size: clamp(1.3rem, 5vw, 2.3rem);
     margin-bottom: 1rem;
     font-weight: 200;
 }
