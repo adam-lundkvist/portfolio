@@ -279,7 +279,7 @@ main {
 
 .skill {
     font-size: 1rem;
-    padding: 5px 10px;
+    padding: 7.5px 15px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
 }
