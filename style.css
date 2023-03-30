@@ -279,7 +279,9 @@ main {
 
 .skill {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
 }
 
 .project-img-figure {
