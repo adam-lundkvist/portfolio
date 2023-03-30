@@ -280,8 +280,6 @@ main {
 .skill {
     font-size: 1rem;
     padding: 10px 20px;
-    border: 1px solid var(--text-color);
-    border-radius: 7px;
 }
 
 .project-img-figure {
