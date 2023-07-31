@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adam Lundkvist - I Focus on Building the Front-end of Websites</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="https://kit.fontawesome.com/9cd636eced.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a href="https://www.adamlundkvist.com/" class="logo links">Adam Lundkvist</a>
+      <ul id="primary-navigation" class="primary-navigation flex">
+        <li><a href="#about" class="nav-links links">About</a></li>
+        <li><a href="#projects" class="nav-links links">Projects</a></li>
+        <li><a href="#contact" class="nav-links links">Contact</a></li>
+      </ul>
+      <div id="hamburger-menu">
+        <i onclick="openNav()" class="fa-solid fa-bars hamburger-icons" id="hamburger-open"></i>
+        <i onclick="closeNav()" class="fa-solid fa-xmark hamburger-icons" id="hamburger-close"></i>
+      </div>
+    </nav>
+    <ul id="clicked-navigation" class="container">
+      <li><a href="#about" class="nav-links links">About</a></li>
+      <li><a href="#projects" class="nav-links links">Projects</a></li>
+      <li><a href="#contact" class="nav-links links">Contact</a></li>
+    </ul>
+  </header>
+  <main class="container">
+    <div id="intro" class="flex-center-align-x-y main-section">
+      <article class="intro-section">
+        <h1 class="main-heading">Hey, My Name is <span class="fw-bold">Adam
+            Lundkvist</span>
+        </h1>
+        <h2><span class="intro-description">I Focus on Building the Front-end of websites
+          </span></h2>
+        <a id="jump-to-section" class="general-btns" href="#projects">Projects <i
+            class="fa-solid fa-arrow-right arrow"></i></a>
+      </article>
+    </div>
+    <div id="about" class="main-section container">
+      <h2 class="section-heading">About Me</h2>
+      <div id="about-container" class="columns section-div">
+        <article id="about-info" class="column">
+          <h3 class="sub-section-title">Introduction</h3>
+          <p>With a love for front-end development, building everything that's visible on websites is something I
+            enjoy doing. I always strive for a clean and sharp UI as well as user-centered design.</p>
+        </article>
+        <section id="skills-info" class="section-div column">
+          <h3 class="sub-section-title">Skills</h3>
+          <ul id="skills" class="wrap">
+          </ul>
+        </section>
+      </div>
+    </div>
+    <div id="projects" class="main-section">
+      <h2 class="section-heading">Projects</h2>
+    </div>
+
+    <div id="contact">
+      <h2 class="section-heading">Contact Me</h2>
+      <div id="contact-info" class="section-div">
+        <a id="contact-btn" class="general-btns" href="mailto:adamlundkvist00@gmail.com">Email <i
+            class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footer-section" class="container">
+      <p>Designed & Built by Adam Lundkvist</p>
+      <ul id="social-box">
+        <li><a href="https://www.linkedin.com/in/adam-lundkvist-b4b699199/" target="_blank"><i
+              class="fa-brands fa-linkedin social-icon"></i></a></li>
+        <li><a href="https://github.com/adam-lundkvist" target="_blank">
+            <i class="fa-brands fa-square-github social-icon"></i>
+          </a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/constants.js"></script>
+
+</body>
+
+</html>
