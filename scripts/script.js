@@ -7,8 +7,6 @@ function openNav() {
 
     hamMenu.style.display = "none";
     closeNavBtn.style.display = "block";
-
-    navMenu.style.display = "block";
 }
 
 function closeNav() {
