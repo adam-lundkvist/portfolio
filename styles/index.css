@@ -1,160 +1,159 @@
 :root {
-    --bg-color: white;
-    --text-color-light: #632626;
-    --text-color: #000000;
-    --text-color-dark: #395B64;
-    --nav-bgcolor: #FFFFF0;
-    --nav-text-color: white;
-    --hover-color: #FF7000;
-    --footer-bg-color: black;
-    --footer-color: white;
-    --heading-line-color: #FF7000;
-    --link-color: #000000;
-    --box-shadow: 0px 0px 30px 0px grey;
-    --btn-color: #FF7000;
-    --btn-border-color: black;
+  --bg-color: white;
+  --text-color-light: #632626;
+  --text-color: #000000;
+  --text-color-dark: #395b64;
+  --nav-bgcolor: #fffff0;
+  --nav-text-color: white;
+  --hover-color: #ff7000;
+  --footer-bg-color: black;
+  --footer-color: white;
+  --heading-line-color: #ff7000;
+  --link-color: #000000;
+  --box-shadow: 0px 0px 10px 0px grey;
+  --btn-color: #ff7000;
+  --btn-border-color: black;
 }
 
 /*  About section    */
 
 #skills {
-    gap: 0.5rem;
-    padding: 0;
+  gap: 0.5rem;
+  padding: 0;
 }
 
 .skill {
-    font-size: 1rem;
-    padding: 7.5px 15px;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
+  font-size: 1rem;
+  padding: 7.5px 15px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
 }
 
 /*  Project section */
 
 .columns {
-    display: block;
+  display: block;
 }
 
 .project-container {
-    margin: 7rem 0;
-    padding: 0;
+  margin: 7rem 0;
+  padding: 0;
 }
 
 .column {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 900px) {
-    .project-container {
-        gap: 2rem;
-        align-items: center;
-        margin: 5rem 0;
-    }
+  .project-container {
+    gap: 2rem;
+    align-items: center;
+    margin: 5rem 0;
+  }
 
-    .columns {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
+  .columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 
-    .column {
-        gap: 4rem;
-    }
+  .column {
+    gap: 4rem;
+  }
 
-    #about-container {
-        gap: 4rem;
-    }
+  #about-container {
+    gap: 4rem;
+  }
 }
 
 .project-img {
-    border-radius: 5px;
-    max-width: 100%;
-    box-shadow: 0px 0px 30px 0 grey;
-    transition: 0.3s ease 0s;
-    opacity: 0.7;
+  border-radius: 5px;
+  max-width: 100%;
+  box-shadow: 0px 0px 30px 0 grey;
+  transition: 0.3s ease 0s;
+  opacity: 0.7;
 }
 
 .project-img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .project-info p {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .btns {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .project-btn {
-    text-align: center;
-    background: var(--btn-color);
-    border: 1px solid var(--btn-color);
-    color: white;
-    border-radius: 3px;
-    transition: 0.2s ease 0s;
-    padding: 7px 10px;
+  text-align: center;
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  color: white;
+  border-radius: 3px;
+  transition: 0.2s ease 0s;
+  padding: 7px 10px;
 }
 
 .project-btn:hover {
-    background: var(--bg-color);
-    color: var(--btn-border-color);
-    border: 1px solid var(--btn-border-color);
+  background: var(--bg-color);
+  color: var(--btn-border-color);
+  border: 1px solid var(--btn-border-color);
 }
 
 .project-arrow {
-    position: relative;
-    margin-left: 5px;
-    left: 0;
+  position: relative;
+  margin-left: 5px;
+  left: 0;
 }
 
 .project-btn:hover .project-arrow {
-    transition: all 0.2s ease-in-out;
-    left: 3px;
+  transition: all 0.2s ease-in-out;
+  left: 3px;
 }
 
 .tools {
-    gap: 1rem;
-    padding: 0;
+  gap: 1rem;
+  padding: 0;
 }
 
 .tool {
-    font-size: 1rem;
-} 
-
+  font-size: 1rem;
+}
 
 /*  Contact */
 
 #contact {
-    margin: 7rem 0;
+  margin: 7rem 0;
 }
 
 #contact-info {
-    text-align: center;
+  text-align: center;
 }
 
 #contact-btn {
-    padding: 10px 20px;
-    text-align: center;
-    border-radius: 3px;
-    color: var(--bg-color);
-    background: var(--btn-color);
-    border: 1px solid var(--btn-color);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 3px;
+  color: var(--bg-color);
+  background: var(--btn-color);
+  border: 1px solid var(--btn-color);
 }
 
 #contact-btn .fa-arrow-right {
-    position: relative;
-    left: 0;
-    margin-left: 5px;
-    transition: all 0.1s ease-in-out;
+  position: relative;
+  left: 0;
+  margin-left: 5px;
+  transition: all 0.1s ease-in-out;
 }
 
 #contact-btn:hover .fa-arrow-right {
-    left: 3px;
+  left: 3px;
 }
 
 #contact-btn:hover {
-    border: 1px solid var(--btn-border-color);
-    background: var(--bg-color);
-    color: var(--text-color);
+  border: 1px solid var(--btn-border-color);
+  background: var(--bg-color);
+  color: var(--text-color);
 }
