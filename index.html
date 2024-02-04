@@ -70,7 +70,9 @@
     <div id="contact">
       <h2 class="section-heading">Contact Me</h2>
       <div id="contact-info" class="section-div">
-        <form class="form" name="contact" netlify>
+
+
+        <form class="form" name="contact" method="POST" data-netlify="true">
           <div class="label-row">
             <label>Name</label><br>
             <input type="text" name="name" class="input" /><br>
@@ -78,6 +80,10 @@
           <div class="label-row">
             <label>Email</label><br>
             <input type="email" name="email" class="input" />
+          </div>
+          <div class="label-row">
+            <label>Message</label><br>
+            <textarea name="message"></textarea></label>
           </div>
           <div class="label-row">
             <button type="submit" class="submit-btn">Send</button>
