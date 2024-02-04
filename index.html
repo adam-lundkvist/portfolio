@@ -70,9 +70,20 @@
     <div id="contact">
       <h2 class="section-heading">Contact Me</h2>
       <div id="contact-info" class="section-div">
-        <a id="contact-btn" class="general-btns" href="mailto:adamlundkvist00@gmail.com">Email <i
-            class="fa-solid fa-arrow-right"></i>
-        </a>
+        <form class="form" name="contact" netlify>
+          <div class="label-row">
+            <label>Name</label><br>
+            <input type="text" name="name" class="input" /><br>
+          </div>
+          <div class="label-row">
+            <label>Email</label><br>
+            <input type="email" name="email" class="input" />
+          </div>
+          <div class="label-row">
+            <button type="submit" class="submit-btn">Send</button>
+          </div>
+        </form>
+
       </div>
     </div>
   </main>
