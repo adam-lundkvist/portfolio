@@ -30,6 +30,10 @@
   border-radius: 5px;
 }
 
+#intro {
+  background: var(--bg-color) !important;
+}
+
 /*  Project section */
 
 .columns {
@@ -177,6 +181,7 @@
     width: 50% !important;
   }
 }
+
 .form {
   background: white;
   padding: 40px;
