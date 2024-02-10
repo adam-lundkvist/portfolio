@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg-color);
+  background: #f8f8f8 !important;
   color: var(--text-color);
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .section-div {
-  margin-top: 5rem; 
+  margin-top: 5rem;
 }
 
 .general-btns {
@@ -136,7 +136,7 @@ header {
 
 nav {
   display: flex;
-  padding: 10px 0 10px 0;
+  padding: 5px 0 5px 0;
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
@@ -270,6 +270,7 @@ nav {
   from {
     transform: translateX(-100vw);
   }
+
   to {
     transform: translateX(0);
   }
